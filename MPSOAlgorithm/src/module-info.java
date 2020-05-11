@@ -1,0 +1,3 @@
+module MPSOAlgorithm {
+    requires AlgorithmModule;
+}

@@ -1,0 +1,3 @@
+module RingTopologyModule {
+    requires TopologyModule;
+}
