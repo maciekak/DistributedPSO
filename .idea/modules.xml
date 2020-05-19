@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AlgorithmModule/AlgorithmModule.iml" filepath="$PROJECT_DIR$/AlgorithmModule/AlgorithmModule.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DistributedPSO.iml" filepath="$PROJECT_DIR$/DistributedPSO.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FunctionModule/FunctionModule.iml" filepath="$PROJECT_DIR$/FunctionModule/FunctionModule.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MPSOAlgorithm/MPSOAlgorithm.iml" filepath="$PROJECT_DIR$/MPSOAlgorithm/MPSOAlgorithm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RingTopologyModule/RingTopologyModule.iml" filepath="$PROJECT_DIR$/RingTopologyModule/RingTopologyModule.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SwarmParticleModule/SwarmParticleModule.iml" filepath="$PROJECT_DIR$/SwarmParticleModule/SwarmParticleModule.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TopologyModule/TopologyModule.iml" filepath="$PROJECT_DIR$/TopologyModule/TopologyModule.iml" />
+    </modules>
+  </component>
+</project>
