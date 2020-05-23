@@ -8,6 +8,7 @@
       <module fileurl="file://$PROJECT_DIR$/MPSOAlgorithm/MPSOAlgorithm.iml" filepath="$PROJECT_DIR$/MPSOAlgorithm/MPSOAlgorithm.iml" />
       <module fileurl="file://$PROJECT_DIR$/Particle/Particle.iml" filepath="$PROJECT_DIR$/Particle/Particle.iml" />
       <module fileurl="file://$PROJECT_DIR$/RingTopologyModule/RingTopologyModule.iml" filepath="$PROJECT_DIR$/RingTopologyModule/RingTopologyModule.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SwarmModule/SwarmModule.iml" filepath="$PROJECT_DIR$/SwarmModule/SwarmModule.iml" />
       <module fileurl="file://$PROJECT_DIR$/SwarmModule/SwarmParticleModule.iml" filepath="$PROJECT_DIR$/SwarmModule/SwarmParticleModule.iml" />
       <module fileurl="file://$PROJECT_DIR$/TopologyModule/TopologyModule.iml" filepath="$PROJECT_DIR$/TopologyModule/TopologyModule.iml" />
     </modules>
