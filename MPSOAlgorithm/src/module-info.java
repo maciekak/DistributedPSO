@@ -1,5 +1,6 @@
 module MPSOAlgorithm {
-    exports Ivoices;
+    exports mpsoalgorithm;
     requires kotlin.stdlib;
+    requires FunctionModule;
     requires AlgorithmModule;
 }
