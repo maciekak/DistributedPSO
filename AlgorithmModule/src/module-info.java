@@ -1,6 +1,6 @@
 module AlgorithmModule {
     exports algorithm;
     requires FunctionModule;
-    requires SwarmParticleModule;
+    requires SwarmModule;
     requires kotlin.stdlib;
 }
