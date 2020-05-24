@@ -38,7 +38,13 @@ class Particle (val testFunction: Function, val omega: Double = 0.7, val lampdaP
 
     private fun updatePosition() {
         for(i in 0..currPosition.size-1) {
-            currPosition[i] = currPosition[i] + velocity[i]
+            val newPosition = currPosition[i] + velocity[i]
+            if (newPosition > testFunction.boundaryDown[i] && newPosition < testFunction.boundaryUp[i])
+                currPosition[i] = newPosition
+            else if (newPosition < testFunction.boundaryDown[i])
+                currPosition[i] = testFunction.boundaryDown[i]
+            else if (newPosition > testFunction.boundaryUp[i])
+                currPosition[i] = testFunction.boundaryUp[i]
         }
     }
 

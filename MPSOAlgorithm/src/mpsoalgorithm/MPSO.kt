@@ -7,6 +7,7 @@ import kotlinx.coroutines.*
 import swarm.Swarm
 import java.util.concurrent.ConcurrentLinkedQueue
 import kotlin.collections.*
+
 class MPSO(override val testFunction: Function, override val parameters: MutableMap<String, Any?>) : Algorithm {
     val swarms: MutableList<Swarm> = mutableListOf()
     init{
@@ -24,7 +25,6 @@ class MPSO(override val testFunction: Function, override val parameters: Mutable
     override fun run(): Pair<DoubleArray, Double> {
         val iterationNumber = 4
         for (i in 1..iterationNumber){
-            val lstOfReturnData = ConcurrentLinkedQueue<Int>()
             runBlocking {
                 swarms.forEach {
                     launch(Dispatchers.IO) {
