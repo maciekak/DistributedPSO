@@ -1,6 +1,7 @@
 module DistributedPSO {
+    requires kotlin.stdlib;
     requires MPSOAlgorithm;
     requires AlgorithmModule;
-    requires kotlin.stdlib;
     requires FunctionModule;
+    requires GridTopologyModule;
 }
