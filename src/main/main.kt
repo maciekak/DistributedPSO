@@ -10,5 +10,6 @@ fun main(args: Array<String>) {
     val parameters: MutableMap<String, Any?> = mutableMapOf<String, Any?>()
     parameters.put("topology", GridTopology())
     val mpso = MPSO(Function(doubleArrayOf(1.0, 1.0), doubleArrayOf(-1.0, -1.0), testFunction), parameters)
-    println("Result: " + mpso.run())
+    val result = mpso.run()
+    println("Result: " + result.first.contentToString() + result.second)
 }

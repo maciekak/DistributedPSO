@@ -17,7 +17,7 @@ class Swarm (var function: Function, var parameters: MutableMap<String, Any?>){
     }
 
     fun iterate() {
-        val lstOfReturnData = ConcurrentLinkedQueue<Int>()
+        //val lstOfReturnData = ConcurrentLinkedQueue<Int>()
         runBlocking {
             particles.forEach {
                 launch(Dispatchers.IO) {

@@ -6,7 +6,7 @@ import function.Function
 import kotlinx.coroutines.*
 import swarm.Swarm
 import java.util.concurrent.ConcurrentLinkedQueue
-
+import kotlin.collections.*
 class MPSO(override val testFunction: Function, override val parameters: MutableMap<String, Any?>) : Algorithm {
     val swarms: MutableList<Swarm> = mutableListOf()
     init{
