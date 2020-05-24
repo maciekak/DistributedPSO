@@ -23,7 +23,7 @@ class MPSO(override val testFunction: Function, override val parameters: Mutable
     }
 
     override fun run(): Pair<DoubleArray, Double> {
-        val iterationNumber = 4
+        val iterationNumber = 40
         for (i in 1..iterationNumber){
             runBlocking {
                 swarms.forEach {

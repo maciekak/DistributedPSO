@@ -4,4 +4,5 @@ module DistributedPSO {
     requires AlgorithmModule;
     requires FunctionModule;
     requires GridTopologyModule;
+    requires RingTopologyModule;
 }

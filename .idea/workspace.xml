@@ -3,9 +3,17 @@
   <component name="ChangeListManager">
     <list default="true" id="6dd7210e-f439-4a46-ade5-6702ddf93ba5" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MPSOAlgorithm/MPSOAlgorithm.iml" beforeDir="false" afterPath="$PROJECT_DIR$/MPSOAlgorithm/MPSOAlgorithm.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DistributedPSO.iml" beforeDir="false" afterPath="$PROJECT_DIR$/DistributedPSO.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MPSOAlgorithm/src/mpsoalgorithm/MPSO.kt" beforeDir="false" afterPath="$PROJECT_DIR$/MPSOAlgorithm/src/mpsoalgorithm/MPSO.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Particle/src/particle/Particle.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Particle/src/particle/Particle.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RingTopologyModule/src/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/RingTopologyModule/src/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DistributedPSO/main/MainKt$main$testFunction$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DistributedPSO/main/MainKt$main$testFunction$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DistributedPSO/main/MainKt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DistributedPSO/main/MainKt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/DistributedPSO/module-info.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/DistributedPSO/module-info.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MPSOAlgorithm/mpsoalgorithm/MPSO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MPSOAlgorithm/mpsoalgorithm/MPSO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/Particle/particle/Particle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Particle/particle/Particle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/RingTopologyModule/module-info.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RingTopologyModule/module-info.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/module-info.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,34 +28,22 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SwarmModule/src/swarm/Swarm.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="19" column="10" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
-              <folding>
-                <element signature="e#15#147#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/TopologyModule/src/topology/Topology.kt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/main.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="286">
-              <caret line="13" column="55" selection-start-line="13" selection-start-column="55" selection-end-line="13" selection-end-column="55" />
+            <state relative-caret-position="264">
+              <caret line="12" column="38" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
               <folding>
-                <element signature="e#14#135#0" expanded="true" />
+                <element signature="e#14#168#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/RingTopologyModule/src/module-info.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="88">
+              <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -55,8 +51,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/module-info.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="110">
-              <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
+            <state>
+              <caret column="4" selection-start-column="4" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -70,10 +66,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Particle/src/particle/Particle.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="572">
+            <state relative-caret-position="61">
               <caret line="46" column="57" selection-start-line="46" selection-start-column="57" selection-end-line="46" selection-end-column="57" />
               <folding>
                 <element signature="e#18#93#0" expanded="true" />
@@ -91,11 +87,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/MPSOAlgorithm/src/mpsoalgorithm/MPSO.kt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="26" column="38" selection-start-line="26" selection-start-column="38" selection-end-line="26" selection-end-column="38" />
+            <state relative-caret-position="220">
+              <caret line="25" column="33" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
               <folding>
                 <element signature="e#23#226#0" expanded="true" />
               </folding>
@@ -156,7 +152,6 @@
         <option value="$PROJECT_DIR$/SwarmParticleModule/src/module-info.java" />
         <option value="$PROJECT_DIR$/SwarmParticleModule/src/swarm/swarm.kt" />
         <option value="$PROJECT_DIR$/TopologyModule/src/Topology.kt" />
-        <option value="$PROJECT_DIR$/RingTopologyModule/src/module-info.java" />
         <option value="$PROJECT_DIR$/TopologyModule/src/module-info.java" />
         <option value="$PROJECT_DIR$/Particle/src/module-info.java" />
         <option value="$PROJECT_DIR$/RingTopologyModule/src/ringtopology/RingTopology.kt" />
@@ -165,12 +160,13 @@
         <option value="$PROJECT_DIR$/DistributedPSO.iml" />
         <option value="$PROJECT_DIR$/AlgorithmModule/src/algorithm/Algorithm.kt" />
         <option value="$PROJECT_DIR$/TopologyModule/src/topology/Topology.kt" />
-        <option value="$PROJECT_DIR$/src/module-info.java" />
         <option value="$PROJECT_DIR$/SwarmModule/src/swarm/Swarm.kt" />
-        <option value="$PROJECT_DIR$/src/main/main.kt" />
         <option value="$PROJECT_DIR$/MPSOAlgorithm/src/module-info.java" />
-        <option value="$PROJECT_DIR$/MPSOAlgorithm/src/mpsoalgorithm/MPSO.kt" />
         <option value="$PROJECT_DIR$/Particle/src/particle/Particle.kt" />
+        <option value="$PROJECT_DIR$/src/module-info.java" />
+        <option value="$PROJECT_DIR$/RingTopologyModule/src/module-info.java" />
+        <option value="$PROJECT_DIR$/src/main/main.kt" />
+        <option value="$PROJECT_DIR$/MPSOAlgorithm/src/mpsoalgorithm/MPSO.kt" />
       </list>
     </option>
   </component>
@@ -230,6 +226,17 @@
               <item name="DistributedPSO - Copy" type="b2602c69:ProjectViewProjectNode" />
               <item name="DistributedPSO - Copy" type="462c0819:PsiDirectoryNode" />
               <item name="out" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DistributedPSO - Copy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DistributedPSO - Copy" type="462c0819:PsiDirectoryNode" />
+              <item name="RingTopologyModule" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DistributedPSO - Copy" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DistributedPSO - Copy" type="462c0819:PsiDirectoryNode" />
+              <item name="RingTopologyModule" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="DistributedPSO - Copy" type="b2602c69:ProjectViewProjectNode" />
@@ -404,7 +411,14 @@
       <option name="project" value="LOCAL" />
       <updated>1590282049377</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Fixes">
+      <created>1590282698567</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1590282698567</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -423,7 +437,7 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27114093" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.27114093" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -432,7 +446,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" weight="0.32719547" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49946696" visible="true" weight="0.32719547" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -564,13 +578,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/RingTopologyModule/src/module-info.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="4" column="1" selection-start-line="4" selection-start-column="1" selection-end-line="4" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Particle/src/module-info.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
@@ -631,20 +638,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/main.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" column="55" selection-start-line="13" selection-start-column="55" selection-end-line="13" selection-end-column="55" />
-          <folding>
-            <element signature="e#14#135#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MPSOAlgorithm/src/module-info.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="44">
           <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AlgorithmModule/src/algorithm/Algorithm.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Particle/src/particle/Particle.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="61">
+          <caret line="46" column="57" selection-start-line="46" selection-start-column="57" selection-end-line="46" selection-end-column="57" />
+          <folding>
+            <element signature="e#18#93#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -665,36 +679,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AlgorithmModule/src/algorithm/Algorithm.kt">
+    <entry file="file://$PROJECT_DIR$/src/module-info.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
+        <state>
+          <caret column="4" selection-start-column="4" selection-end-column="4" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/module-info.java">
+    <entry file="file://$PROJECT_DIR$/RingTopologyModule/src/module-info.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
+        <state relative-caret-position="88">
+          <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/main.kt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="12" column="38" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
+          <folding>
+            <element signature="e#14#168#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/MPSOAlgorithm/src/mpsoalgorithm/MPSO.kt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="26" column="38" selection-start-line="26" selection-start-column="38" selection-end-line="26" selection-end-column="38" />
+        <state relative-caret-position="220">
+          <caret line="25" column="33" selection-start-line="25" selection-start-column="33" selection-end-line="25" selection-end-column="33" />
           <folding>
             <element signature="e#23#226#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Particle/src/particle/Particle.kt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="572">
-          <caret line="46" column="57" selection-start-line="46" selection-start-column="57" selection-end-line="46" selection-end-column="57" />
-          <folding>
-            <element signature="e#18#93#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -749,7 +763,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>MPSOAlgorithm</last-edited>
+          <last-edited>DistributedPSO</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
