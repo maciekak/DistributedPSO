@@ -17,7 +17,6 @@ class Swarm (var function: Function, var parameters: MutableMap<String, Any?>){
     }
 
     fun iterate() {
-        //val lstOfReturnData = ConcurrentLinkedQueue<Int>()
         runBlocking {
             particles.forEach {
                 launch(Dispatchers.IO) {
@@ -45,10 +44,12 @@ class Swarm (var function: Function, var parameters: MutableMap<String, Any?>){
 
     fun deleteParticle(index: Int){
         particles.removeAt(index)
+        updateNeighbours()
     }
 
     fun addParticle(particle: Particle){
         particles.add(particle)
+        updateNeighbours()
     }
 
 }

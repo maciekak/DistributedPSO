@@ -11,8 +11,10 @@ import kotlin.collections.*
 class MPSO(override val testFunction: Function, override val parameters: MutableMap<String, Any?>) : Algorithm {
     val swarms: MutableList<Swarm> = mutableListOf()
     init{
-        val swarmNumber = 2
+        parameters.putIfAbsent("swarmNumber", 2)
         parameters.putIfAbsent("particleNumber", 5)
+        parameters.putIfAbsent("iterationNumber", 400)
+        val swarmNumber = parameters.get("swarmNumber") as Int
         for (i in 1..swarmNumber){
             swarms.add(Swarm(testFunction, parameters))
         }
@@ -23,7 +25,7 @@ class MPSO(override val testFunction: Function, override val parameters: Mutable
     }
 
     override fun run(): Pair<DoubleArray, Double> {
-        val iterationNumber = 40
+        val iterationNumber = parameters.get("iterationNumber") as Int
         for (i in 1..iterationNumber){
             runBlocking {
                 swarms.forEach {
@@ -34,7 +36,6 @@ class MPSO(override val testFunction: Function, override val parameters: Mutable
             }
         }
         return getOptimum()
-        //return testFunction.getResult(doubleArrayOf(1.0, 2.0))
     }
 
 
@@ -51,14 +52,3 @@ class MPSO(override val testFunction: Function, override val parameters: Mutable
     }
 
 }
-/*
-Algorithm  - input: Function, optional: parameters(List(Swarm), Topology, #ofParticles, iterations, ω, φp, φg),
-	getParameter
-run{
-//Create Swarms if not given
-for i in range(iterations)
-	Swarm.iterate()	//assuming one swarm
-return max of Swarms
-}
-
- */

@@ -5,7 +5,6 @@ import particle.Particle
 
 class RingTopology : Topology {
     override fun setNeighbours(particles: List<Particle>) {
-        //TODO: upewnić się czy operator .. <- zasięgu robi tak jak się wydaje, że robi
         for (i in 0..particles.size-1){
             if(i == 0){
                 particles[i].particles.add(particles.last())
