@@ -1,14 +1,15 @@
 package main
 
 import function.Function
+import mpsoalgorithm.IntegerParameter
 import mpsoalgorithm.MPSO
-import ringtopology.RingTopology
+import gridtopology.GridTopology
 import kotlin.math.cos
 
 fun main(args: Array<String>) {
     val testFunction: (DoubleArray) -> Double = { x -> (x[0] - 1) *(x[0] - 1) + (x[1] + 2)*(x[1] + 2) }
     val parameters: MutableMap<String, Any?> = mutableMapOf<String, Any?>()
-    parameters.put("topology", RingTopology())
+    parameters.put("topology", GridTopology())
     //parameters.put("particleNumber", 50)
     val mpso = MPSO(Function(doubleArrayOf(1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0),
                             doubleArrayOf(0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0), ::testFunctionCosff), parameters)
