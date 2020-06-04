@@ -4,7 +4,7 @@ import function.Function
 import kotlin.math.abs
 import kotlin.random.Random
 
-class Particle (val testFunction: Function, val id: Int, val omega: Double = 0.6, val lampdaP: Double = 0.3, val lampdaG: Double = 0.8){
+class Particle (val testFunction: Function, val id: Int, val omega: Double = 0.9, val lampdaP: Double = 0.2, val lampdaG: Double = 0.3){
     val particles: MutableList<Particle> = mutableListOf()
     var currPosition: DoubleArray
     var bestPersonalPosition: DoubleArray
@@ -23,7 +23,7 @@ class Particle (val testFunction: Function, val id: Int, val omega: Double = 0.6
             currPosition[i] = Random.nextDouble(testFunction.boundaryDown[i], testFunction.boundaryUp[i])
             bestPersonalPosition[i] = currPosition[i]
             bestPosition[i]  = currPosition[i]
-            val diff = abs(testFunction.boundaryDown[i] - testFunction.boundaryUp[i])/3
+            val diff = abs(testFunction.boundaryDown[i] - testFunction.boundaryUp[i])
             velocity[i]  = Random.nextDouble(-diff, diff)
         }
         currentValue = testFunction.getResult(currPosition)
