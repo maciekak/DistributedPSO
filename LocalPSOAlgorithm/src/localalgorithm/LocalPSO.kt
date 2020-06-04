@@ -1,4 +1,4 @@
-package mpsoalgorithm
+package localalgorithm
 
 import algorithm.Algorithm
 import algorithm.Parameter
@@ -13,7 +13,7 @@ class LocalPSO(override val testFunction: Function, override val parameters: Mut
     init{
         parameters.putIfAbsent("particleNumber", 5)
         parameters.putIfAbsent("iterationNumber", 400)
-        swarms.add(Swarm(testFunction, parameters))
+        swarm = Swarm(testFunction, parameters)
     }
 
     override fun getParameter(name: String): Any? {
@@ -23,9 +23,7 @@ class LocalPSO(override val testFunction: Function, override val parameters: Mut
     override fun run(): Pair<DoubleArray, Double> {
         val iterationNumber = parameters.get("iterationNumber") as Int
         for (i in 1..iterationNumber){
-            launch(Dispatchers.IO) {
-                swarm.iterate()
-            }
+            swarm.iterate()
         }
         return getOptimum()
     }
