@@ -1,19 +1,19 @@
 package main
 
 import function.Function
-import mpsoalgorithm.IntegerParameter
-import mpsoalgorithm.MPSO
 import gridtopology.GridTopology
+import mpsoalgorithm.MPSO
 import kotlin.math.cos
 
-fun main(args: Array<String>) {
-    val testFunction: (DoubleArray) -> Double = { x -> (x[0] - 1) *(x[0] - 1) + (x[1] + 2)*(x[1] + 2) }
-    val parameters: MutableMap<String, Any?> = mutableMapOf<String, Any?>()
+fun main() {
+    val parameters: MutableMap<String, Any?> = mutableMapOf()
     parameters.put("topology", GridTopology())
-    //parameters.put("particleNumber", 50)
-    val mpso = MPSO(Function(doubleArrayOf(1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0),
+    parameters.put("particleNumber", 30)
+    parameters.put("iterationNumber", 400)
+    parameters.put("swarmNumber", 10)
+    val algorithm = MPSO(Function(doubleArrayOf(1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0),
                             doubleArrayOf(0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0), ::testFunctionCosff), parameters)
-    val result = mpso.run()
+    val result = algorithm.run()
     println("Optimum: " + result.first.contentToString() + " Optimum value: " + result.second)
 }
 

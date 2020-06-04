@@ -16,6 +16,10 @@ class Swarm (var function: Function, var parameters: MutableMap<String, Any?>){
         updateNeighbours()
     }
 
+    fun updateNeighbours(){
+        topology.setNeighbours(particles)
+    }
+
     fun iterate() {
         runBlocking {
             particles.forEach {
@@ -36,10 +40,6 @@ class Swarm (var function: Function, var parameters: MutableMap<String, Any?>){
             }
         }
         return optimum
-    }
-
-    fun updateNeighbours(){
-        topology.setNeighbours(particles)
     }
 
     fun deleteParticle(index: Int){

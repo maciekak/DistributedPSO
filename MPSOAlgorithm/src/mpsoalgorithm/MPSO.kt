@@ -33,7 +33,7 @@ class MPSO(override val testFunction: Function, override val parameters: Mutable
                     }
                 }
                 var result = getOptimum()
-                println("Iteration: " + i + "; Optimum value: " + result.second)
+                println(result.second)
             }
         }
         return getOptimum()

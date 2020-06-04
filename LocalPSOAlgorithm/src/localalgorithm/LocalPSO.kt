@@ -12,7 +12,6 @@ class LocalPSO(override val testFunction: Function, override val parameters: Mut
     val swarm: Swarm
     init{
         parameters.putIfAbsent("particleNumber", 5)
-        parameters.putIfAbsent("iterationNumber", 400)
         swarm = Swarm(testFunction, parameters)
     }
 
@@ -24,6 +23,8 @@ class LocalPSO(override val testFunction: Function, override val parameters: Mut
         val iterationNumber = parameters.get("iterationNumber") as Int
         for (i in 1..iterationNumber){
             swarm.iterate()
+            var result = getOptimum()
+            println(result.second)
         }
         return getOptimum()
     }
