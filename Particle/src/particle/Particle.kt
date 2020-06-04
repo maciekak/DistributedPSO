@@ -4,13 +4,15 @@ import function.Function
 import kotlin.math.abs
 import kotlin.random.Random
 
-class Particle (val testFunction: Function, val omega: Double = 0.7, val lampdaP: Double = 0.7, val lampdaG: Double = 0.7){
+class Particle (val testFunction: Function, val id: Int, val omega: Double = 0.6, val lampdaP: Double = 0.3, val lampdaG: Double = 0.8){
     val particles: MutableList<Particle> = mutableListOf()
     var currPosition: DoubleArray
     var bestPersonalPosition: DoubleArray
     var bestPosition: DoubleArray
     private var velocity: DoubleArray
-
+    var currentValue = 0.0
+    var bestPersonalValue = 0.0
+    var bestValue = 0.0
     init {
         val size = testFunction.boundaryDown.size
         currPosition = DoubleArray(size)
@@ -20,10 +22,13 @@ class Particle (val testFunction: Function, val omega: Double = 0.7, val lampdaP
         for(i in 0..size-1){
             currPosition[i] = Random.nextDouble(testFunction.boundaryDown[i], testFunction.boundaryUp[i])
             bestPersonalPosition[i] = currPosition[i]
-            bestPosition[i]  = Random.nextDouble(testFunction.boundaryDown[i], testFunction.boundaryUp[i])
-            val diff = abs(testFunction.boundaryDown[i] - testFunction.boundaryUp[i])
+            bestPosition[i]  = currPosition[i]
+            val diff = abs(testFunction.boundaryDown[i] - testFunction.boundaryUp[i])/3
             velocity[i]  = Random.nextDouble(-diff, diff)
         }
+        currentValue = testFunction.getResult(currPosition)
+        bestPersonalValue = currentValue
+        bestValue = currentValue
     }
 
 
@@ -49,19 +54,22 @@ class Particle (val testFunction: Function, val omega: Double = 0.7, val lampdaP
     }
 
     fun iterate() {
-        //TODO: każde wywołanie testFunction.getResult może trwać długo, można dać to do corutine albo trzymać wynik razem z argumentami
         val bestNeighbour = particles.minBy { p -> testFunction.getResult(p.bestPosition) }
         if(bestNeighbour != null && testFunction.getResult(bestNeighbour.bestPosition) < testFunction.getResult(bestPosition) ){
-            bestPosition = bestNeighbour.bestPosition
+            bestPosition = bestNeighbour.bestPosition.copyOf()
+            bestValue = testFunction.getResult(bestNeighbour.bestPosition)
         }
 
         updateVelocity()
         updatePosition()
+        currentValue = testFunction.getResult(currPosition)
 
         if(testFunction.getResult(currPosition) < testFunction.getResult(bestPersonalPosition)){
-            bestPersonalPosition = currPosition
+            bestPersonalPosition = currPosition.copyOf()
+            bestPersonalValue = testFunction.getResult(currPosition)
             if(testFunction.getResult(currPosition) < testFunction.getResult(bestPosition)){
-                bestPosition = currPosition
+                bestPosition = currPosition.copyOf()
+                bestValue = testFunction.getResult(currPosition)
             }
         }
     }

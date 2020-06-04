@@ -11,7 +11,7 @@ class Swarm (var function: Function, var parameters: MutableMap<String, Any?>){
     init{
         var particleNumber = parameters.get("particleNumber") as Int
         for(i in 1..particleNumber){
-            particles.add(Particle(function))
+            particles.add(Particle(function, i))
         }
         updateNeighbours()
     }
