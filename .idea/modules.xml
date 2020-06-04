@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/DistributedPSO.iml" filepath="$PROJECT_DIR$/DistributedPSO.iml" />
       <module fileurl="file://$PROJECT_DIR$/FunctionModule/FunctionModule.iml" filepath="$PROJECT_DIR$/FunctionModule/FunctionModule.iml" />
       <module fileurl="file://$PROJECT_DIR$/GridTopologyModule/GridTopologyModule.iml" filepath="$PROJECT_DIR$/GridTopologyModule/GridTopologyModule.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LocalPSOAlgorithm/LocalPSOAlgorithm.iml" filepath="$PROJECT_DIR$/LocalPSOAlgorithm/LocalPSOAlgorithm.iml" />
       <module fileurl="file://$PROJECT_DIR$/MPSOAlgorithm/MPSOAlgorithm.iml" filepath="$PROJECT_DIR$/MPSOAlgorithm/MPSOAlgorithm.iml" />
       <module fileurl="file://$PROJECT_DIR$/Particle/Particle.iml" filepath="$PROJECT_DIR$/Particle/Particle.iml" />
       <module fileurl="file://$PROJECT_DIR$/RingTopologyModule/RingTopologyModule.iml" filepath="$PROJECT_DIR$/RingTopologyModule/RingTopologyModule.iml" />

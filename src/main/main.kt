@@ -1,9 +1,7 @@
 package main
 
 import function.Function
-import mpsoalgorithm.IntegerParameter
 import mpsoalgorithm.MPSO
-import gridtopology.GridTopology
 import ringtopology.RingTopology
 fun main(args: Array<String>) {
     val testFunction: (DoubleArray) -> Double = { x -> (x[0] - 1) *(x[0] - 1) + (x[1] + 2)*(x[1] + 2) }
